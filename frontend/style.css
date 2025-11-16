@@ -1,0 +1,160 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #0A192F;
+    color: #CCD6F6;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    padding: 20px;
+}
+
+.app-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    width: 100%;
+    background-color: #112240; 
+    padding: 20px 30px; 
+    border-radius: 15px; 
+    margin-bottom: 40px; 
+}
+
+.judul {
+    color: #CCD6F6; 
+    font-size: 1.5rem;
+}
+
+.converter-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+}
+
+.box-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    flex: 1;
+}
+
+.box-container label {
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+textarea {
+    width: 100%;
+    height: 300px;
+    background-color: #112240;
+    color: #CCD6F6;
+    border-radius: 20px;
+    padding: 20px;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 1.1rem;
+    border: 3px solid transparent;
+    transition: all 0.3s ease;
+}
+
+textarea:focus {
+    outline: none;
+}
+
+.box-container.aktif textarea {
+    border-color: #FF6600;
+    box-shadow: 0 0 15px #FF6600;
+}
+
+.box-container.inaktif textarea {
+    border-color: #112240;
+    background-color: #0A192F;
+    color: #4a5c80;
+}
+
+.box-container.inaktif label {
+    color: #4a5c80;
+}
+
+.swap-button {
+    background-color: #112240;
+    color: #CCD6F6;
+    border: 2px solid #4a5c80;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.swap-button:hover {
+    background-color: #FF6600;
+    border-color: #FF6600;
+    color: white;
+}
+
+#about-link {
+    color: #CCD6F6;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+#about-link:hover {
+    color: #FF6600;
+}
+
+@media (min-width: 768px) {
+    body {
+        padding: 40px;
+    }
+
+    .judul {
+        font-size: 1.8rem;
+    }
+
+    .converter-wrapper {
+        flex-direction: row;
+    }
+}
+
+textarea::-webkit-scrollbar {
+    width: 8px; 
+}
+
+textarea::-webkit-scrollbar-track {
+    background: #112240;
+    border-radius: 10px;
+}
+
+textarea::-webkit-scrollbar-thumb {
+    background-color: #4a5c80;
+    border-radius: 10px;
+    border: 2px solid #112240;
+}
+
+textarea::-webkit-scrollbar-thumb:hover {
+    background-color: #CCD6F6;
+}
+
+textarea {
+    scrollbar-width: thin;
+    scrollbar-color: #4a5c80 #112240;
+}
+
+textarea {
+    width: 100%;
+    height: 300px;
+    background-color: #112240;
+
+    resize: none;
+}

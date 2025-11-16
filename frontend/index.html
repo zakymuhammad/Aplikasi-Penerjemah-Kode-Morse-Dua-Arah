@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplikasi Penerjemah Kode Morse Dua Arah Berbasis Web</title>
+    <link rel="stylesheet" href="../frontend/style.css">
+</head>
+<body>
+    <main class="app-container">
+    
+        <header class="app-header">
+            <h1 class="judul">Aplikasi Penerjemah Kode Morse Dua Arah</h1>
+            <a href="#" id="about-link">About</a>
+        </header>
+    
+        <div class="converter-wrapper">
+    
+            <div class="box-container" id="container-teks">
+                <label for="inputTeks" id="label-teks">Teks</label>
+                <textarea id="inputTeks" placeholder="Ketik teks di sini..."></textarea>
+            </div>
+    
+            <button id="tombol-swap" class="swap-button">
+                &rightleftarrows;
+            </button>
+    
+            <div class="box-container" id="container-morse">
+                <label for="inputMorse" id="label-morse">Morse</label>
+                <textarea id="inputMorse" placeholder="Hasil akan muncul di sini..."></textarea>
+            </div>
+    
+        </div>
+    
+    </main>
+    
+    <script src="../logic/script.js"></script>
+</body>
+</html>
